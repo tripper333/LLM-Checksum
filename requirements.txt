@@ -1,15 +1,13 @@
+# ensure pip is recent enough to grab wheels
+pip>=23.1.2
+
 streamlit==1.24.1
 openai==0.27.8
 torch>=2.2.0,<3.0.0
-tiktoken==0.4.0
-pandas==2.0.3
-plotly==5.15.0
-scikit-learn==1.3.0
-streamlit==1.24.1
-openai==0.27.8
-torch>=2.2.0,<3.0.0
+# wheels available for >=0.6.0, so we avoid Rust build
 tiktoken>=0.6.0,<0.7.0
 pandas==2.0.3
 plotly==5.15.0
 scikit-learn==1.3.0
+# pick a Pillow wheel that already bundles zlib so no system headers needed
 pillow==9.4.0
