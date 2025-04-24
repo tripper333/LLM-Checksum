@@ -1,17 +1,15 @@
--streamlit==1.24.1
--openai==0.27.8
--torch>=2.2.0,<3.0.0
--tiktoken==0.4.0
--pandas==2.0.3
--plotly==5.15.0
--scikit-learn==1.3.0
-+streamlit==1.24.1
-+openai==0.27.8
-+torch>=2.2.0,<3.0.0
-+# use a tiktoken version with pre-built wheels (no Rust needed)
-+tiktoken>=0.6.0,<0.7.0
-+pandas==2.0.3
-+plotly==5.15.0
-+scikit-learn==1.3.0
-+# pin pillow to a wheel-only version so it won’t try to compile libjpeg/zlib
-+pillow==9.4.0
+streamlit==1.24.1
+openai==0.27.8
+torch>=2.2.0,<3.0.0
+tiktoken==0.4.0
+pandas==2.0.3
+plotly==5.15.0
+scikit-learn==1.3.0
+streamlit==1.24.1
+openai==0.27.8
+torch>=2.2.0,<3.0.0
+tiktoken>=0.6.0,<0.7.0
+pandas==2.0.3
+plotly==5.15.0
+scikit-learn==1.3.0
+pillow==9.4.0
