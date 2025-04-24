@@ -1,25 +1,32 @@
-# DGFT Prompt-Response Landscape Analyzer
+# LLM Checksum
 
-This Streamlit application analyzes prompts and their corresponding AI-generated responses using DGFT-inspired metrics (embedding variance, token entropy, combined 'μ'), allows for AI and user quality ratings, and provides an interactive visualization of the relationships.
+**LLM Checksum** is a Streamlit application that evaluates the *semantic integrity* and *coherence* of prompts and their corresponding AI-generated responses using principles from **Dynamic Gradient Fields Theory (DGFT)**.
+
+It introduces a novel scalar metric, **μ (mu)**—a *linguistic checksum*—which compactly summarizes a prompt's structure, embedding variance, and token entropy into a single, tunable signature. This checksum acts as a proxy for prompt quality, coherence, and semantic tension, enabling both monitoring and optimization of AI agent behavior.
+
+---
 
 ## Features
 
-* Calculates DGFT-inspired metrics (μ, Variance, Entropy) for both prompts and responses.
-* Generates responses using configurable OpenAI models (e.g., GPT-4o, GPT-3.5-turbo).
-* Gets AI-driven quality scores for responses using configurable OpenAI models.
-* Allows users to interactively input their own quality scores (1-10).
-* Visualizes the relationship between prompt metrics (μ, entropy, variance) and response quality (AI or user score) using an interactive Plotly scatter plot.
-* Detailed tooltips show prompt/response text, metrics, and scores.
-* Configurable models for generation, rating, and embeddings via the sidebar.
-* Option to use a default list of prompts or enter custom prompts.
+- Calculates DGFT-inspired metrics (μ, Variance, Entropy) for both prompts and responses.
+- Uses OpenAI's `text-embedding-ada-002` model for semantic vectorization.
+- Generates responses using configurable OpenAI models (e.g., GPT-4o, GPT-3.5-turbo).
+- AI-generated quality ratings using GPT-based evaluation prompts.
+- Supports manual **user quality scoring** for human-in-the-loop calibration.
+- Visualizes prompt and response relationships using interactive Plotly scatter plots.
+- Tracks μ evolution across conversation turns to detect drift or degradation.
+- Configurable models and inputs via the Streamlit sidebar.
+
+---
 
 ## Setup and Running Locally
 
-1.  **Clone the repository:**
-    ```bash
-    git clone <your-repo-url>
-    cd your-repo-name
-    ```
+```bash
+git clone <your-repo-url>
+cd your-repo-name
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+pip install -r requirements.txt
 
 2.  **Create a virtual environment (recommended):**
     ```bash
@@ -44,15 +51,6 @@ This Streamlit application analyzes prompts and their corresponding AI-generated
     ```bash
     streamlit run streamlit_app.py
     ```
-
-## Deployment to Streamlit Cloud
-
-1.  **Push your code to a GitHub repository.** Ensure your `secrets.toml` file is included in your `.gitignore` file and is NOT pushed to GitHub.
-2.  **Sign up or log in** to [Streamlit Community Cloud](https://streamlit.io/cloud).
-3.  Click "**New app**" and connect your GitHub account.
-4.  Select the repository and branch containing your `streamlit_app.py` and `requirements.txt` files.
-5.  **Configure Secrets:** In the advanced settings during deployment (or later in the app settings), add your `OPENAI_API_KEY` as a secret. The key name must match what's used in the code (`OPENAI_API_KEY`).
-6.  Click "**Deploy!**".
 
 ## Usage
 
