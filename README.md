@@ -64,4 +64,17 @@ This is just the start. Future expansions include:
 
 ## 🛠️ Run Locally
 Streamlit app in development.
-Run from notebook: 
+
+## 📓 Notebook
+
+You can view or explore the analysis directly in the interactive Jupyter notebook:
+
+👉 **[PolitePromptTest_notebook.ipynb](https://github.com/tripper333/PolitePromptTest/blob/main/PolitePromptTest_notebook.ipynb)**
+
+This notebook includes:
+- Prompt preparation and encoding
+- Metric computation (μ, entropy, variance)
+- Dimensionality reduction via PCA
+- Labeling and grouping of semantic clusters
+- Output generation for the 3D visualization
+
