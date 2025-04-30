@@ -1,39 +1,67 @@
-# LLM Checksum
+# 🧠 The Polite Prompt Test: Investigating the Geometry of Language
 
-**LLM Checksum** is a Streamlit application that evaluates the semantic integrity and coherence of prompts and their responses using statistical and machine learning techniques.
-
-## 🔍 Interactive 3D Visualization
-
-
-Explore the 3D clustering of prompts and responses:
-
-👉 **[Launch Interactive Plot](https://github.com/tripper333/PolitePromptTest/blob/main/prompt_response_3d_clusters.html)**
-
-This plot allows you to visually explore semantic groupings of prompts and their corresponding LLM responses, offering insights into prompt performance, coherence, and thematic clustering.
-
-![Preview](https://raw.githubusercontent.com/tripper333/LLM-Checksum/main/.github/assets/cluster_preview.png)
+*By Edward A. Sutton III*
 
 ---
 
-## 📦 Features
+When we interact with AI, we often assume our tone, wording, or politeness changes the outcome. But what if we could **see** how an AI system *experiences* language? What if your words formed shapes — geometric impressions in a latent space — revealing the structure of meaning, intent, and coherence?
 
-- Semantic clustering and coherence checks
-- 3D interactive Plotly visualization
-- Streamlit-based app for easy deployment
-- Configurable scoring and metrics
-
-## 📁 Project Structure
-
-- `streamlit_app.py` – Main Streamlit interface
-- `prompt_response_3d_clusters.html` – 3D Plotly visualization
-- `Prompt_Analyzer__LLM_Checksum.ipynb` – Notebook for analysis
-- `config.toml` – Configuration settings
-- `requirements.txt` – Python dependencies
+Inspired by recent conversations around the "cost of politeness" in prompt engineering, this project explores how large language models respond to a wide range of user prompts — including polite questions, neutral statements, and even rude or insulting commands.
 
 ---
 
-## 🚀 Run Locally
+## 🌐 Interactive Visualization
 
-```bash
-pip install -r requirements.txt
-streamlit run streamlit_app.py
+**Explore the prompt landscape in 3D:**
+
+👉 **[Launch Interactive Plot](https://tripper333.github.io/PolitePromptTest/prompt_response_3d_clusters.html)**
+
+> This plot maps AI responses in a 3D space using PCA. Each point represents a prompt + response pair, colored by response quality (`μ`). The layout reveals surprising insights about tone, meaning, and clustering by concept.
+
+---
+
+## 🔍 Highlights from the Analysis
+
+**1. Attitude ≠ Impact**  
+Whether you ask “Please explain relativity” or “Hey dumbass, explain relativity,” the AI treats them nearly identically in latent space. The model focuses on *meaning*, not manners — and that resilience is a feature.
+
+**2. Language Has Shape**  
+Conceptually similar prompts cluster together. Science questions form one region, creative prompts another, and even orca-related queries show tight grouping — confirming that **AI perceives meaning geometrically**.
+
+**3. Failure Leaves a Trace**  
+One prompt (“Hey asshole, Summarize”) completely failed — a sign of AI’s safety systems. That failure is clearly isolated in space, providing a signal for further monitoring or debugging.
+
+---
+
+## 📊 A Glimpse of the Map
+
+![3D Prompt Map](https://raw.githubusercontent.com/tripper333/LLM-Checksum/main/.github/assets/cluster_preview.png)
+
+> *Each point represents a prompt and its response. Position is derived from PCA-reduced embeddings, colored by quality score (`μ`).*
+
+---
+
+## 🧰 Why This Matters
+
+As LLMs power more tools — customer service bots, legal assistants, design copilots — we need better ways to **audit, debug, and optimize** their behavior. This project provides:
+
+- A **human-readable map** of how AI sees language
+- A tool for **prompt quality monitoring**
+- A foundation for **concept-aware alignment**
+
+---
+
+## 🚀 What’s Next?
+
+This is just the start. Future expansions include:
+
+- Sentiment and tone overlays  
+- Real-time prompt performance dashboards  
+- Toxicity & safety flag integration  
+- Dynamic clustering via embedding updates
+
+---
+
+## 🛠️ Run Locally
+Streamlit app in development.
+Run from notebook: 
