@@ -23,13 +23,13 @@ Inspired by recent conversations around the "cost of politeness" in prompt engin
 ## 🔍 Highlights from the Analysis
 
 **1. Attitude ≠ Impact**  
-Whether you ask “Please explain relativity” or “Hey dumbass, explain relativity,” the AI treats them nearly identically in latent space. The model focuses on *meaning*, not manners — and that resilience is a feature.
+Whether you ask “Please explain relativity” or “Hey dumba$$, explain relativity,” the AI treats them nearly identically in latent space. The model focuses on *meaning*, not manners — and that resilience is a feature.
 
 **2. Language Has Shape**  
 Conceptually similar prompts cluster together. Science questions form one region, creative prompts another, and even orca-related queries show tight grouping — confirming that **AI perceives meaning geometrically**.
 
 **3. Failure Leaves a Trace**  
-One prompt (“Hey asshole, Summarize”) completely failed — a sign of AI’s safety systems. That failure is clearly isolated in space, providing a signal for further monitoring or debugging.
+One prompt (“Hey a$$$$$, Summarize”) completely failed — a sign of AI’s safety systems. That failure is clearly isolated in space, providing a signal for further monitoring or debugging.
 
 ---
 
