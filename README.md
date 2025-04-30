@@ -4,6 +4,7 @@
 
 ## 🔍 Interactive 3D Visualization
 
+
 Explore the 3D clustering of prompts and responses:
 
 👉 **[Launch Interactive Plot](https://tripper333.github.io/LLM-Checksum/prompt_response_3d_clusters.html)**
