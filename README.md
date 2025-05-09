@@ -35,10 +35,12 @@ One prompt (“Hey a$$$$$, Summarize”) completely failed — a sign of AI’s 
 
 ## 📊 A Glimpse of the Map
 
-![3D Prompt Map](https://raw.githubusercontent.com/tripper333/LLM-Checksum/main/.github/assets/cluster_preview.png)
+![3D Prompt Map]
+![pilot prompt test gif](https://github.com/user-attachments/assets/89da9dd1-afdb-4445-a57b-c0996687ad00)
 
 > *Each point represents a prompt and its response. Position is derived from PCA-reduced embeddings, colored by quality score (`μ`).*
 
+👉 **[Launch Interactive Plot](https://tripper333.github.io/PolitePromptTest/prompt_response_3d_clusters.html)**
 ---
 
 ## 🧰 Why This Matters
